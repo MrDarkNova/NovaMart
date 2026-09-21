@@ -4,25 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NovaMart — Demo shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="bar">
-    <strong>NovaMart</strong>
-    <span class="pill">DEMO STORE</span>
+    <div class="brand">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="9" fill="#7c5cfc"/><path d="M8 22V10h3l3.2 5.4L17.4 10H20.5v12h-2.6v-7.1L15.2 20h-.4L11.6 14.9V22H8z" fill="#fff"/></svg>
+      <strong>NovaMart</strong>
+    </div>
+    <span class="pill">DEMO STORE · no card data</span>
     <nav><a href="#shop">Shop</a><a href="#cart">Cart (<span id="count">0</span>)</a></nav>
   </header>
   <section class="hero">
-    <p class="kicker">Portfolio demo</p>
-    <h1>Everyday tech, shipped from Kaduna.</h1>
-    <p>Fictional catalog. Checkout opens WhatsApp — no card data stored.</p>
+    <p class="kicker">Kaduna · fictional catalog</p>
+    <h1>Everyday tech,<br/>priced in naira.</h1>
+    <p>A storefront you can show a client. Checkout opens WhatsApp. Nothing is charged.</p>
   </section>
   <section id="shop" class="grid"></section>
   <section id="cart" class="cart">
-    <h2>Cart</h2>
+    <h2>Bag</h2>
     <div id="cartList"></div>
     <p id="total"></p>
-    <a id="wa" class="btn" href="#">Checkout on WhatsApp</a>
+    <a id="wa" class="btn" href="#">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.7 15L2 22l5.2-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 0 1 6.9 12l.3.5-3 1.6-4.2-4.2a6 6 0 1 0-2.7 1.4l.5.1 1.5-3.1A6 6 0 0 1 12 4z"/></svg>
+      Checkout on WhatsApp
+    </a>
   </section>
   <footer>Demo only · Victor Kumba / Mr. Darknova</footer>
   <script src="app.js"></script>
