@@ -4,35 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NovaMart</title>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="bar">
-    <div class="brand">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="9" fill="#7c5cfc"/><path d="M8 22V10h3l3.2 5.4L17.4 10H20.5v12h-2.6v-7.1L15.2 20h-.4L11.6 14.9V22H8z" fill="#fff"/></svg>
-      <strong>NovaMart</strong>
-    </div>
-    <nav><a href="#shop">Shop</a><a href="#cart">Cart (<span id="count">0</span>)</a></nav>
+  <div class="topbar">Sell on NovaMart · Help · Kaduna</div>
+  <header class="head">
+    <a class="logo" href="#">Nova<span>Mart</span></a>
+    <form id="search">
+      <input name="q" placeholder="Search products, brands and categories" />
+      <button type="submit">Search</button>
+    </form>
+    <button class="cartbtn" id="openCart">Cart <b id="count">0</b></button>
   </header>
-  <section class="hero">
-    <p class="kicker">Kaduna · WhatsApp checkout</p>
-    <h1>Tech accessories.<br/>Order lands on WhatsApp.</h1>
-    <p>Cart saves on this device. Checkout opens a real message to +234 903 411 5677.</p>
+  <nav class="cats" id="cats"></nav>
+  <section class="flash">
+    <div>
+      <strong>Flash deals</strong>
+      <p>Official-store accessories. Order on WhatsApp.</p>
+    </div>
+    <span>Not Jumia — independent shop</span>
   </section>
-  <section id="shop" class="grid"></section>
-  <section id="cart" class="cart">
-    <h2>Bag</h2>
+  <main>
+    <h2>Phones &amp; accessories</h2>
+    <div class="grid" id="grid"></div>
+  </main>
+  <aside class="drawer" id="drawer">
+    <h3>Cart</h3>
     <div id="cartList"></div>
     <p id="total"></p>
     <form id="order">
       <input name="buyer" required placeholder="Your name" />
-      <input name="phone" required placeholder="Your WhatsApp number" />
+      <input name="phone" required placeholder="WhatsApp number" />
       <input name="note" placeholder="Delivery note" />
-      <button type="submit" id="wa">Send order on WhatsApp</button>
+      <button type="submit">Checkout on WhatsApp</button>
     </form>
-  </section>
-  <footer>NovaMart · Victor Kumba</footer>
+    <button class="ghost" id="closeCart" type="button">Close</button>
+  </aside>
+  <footer>NovaMart · Victor Kumba · WhatsApp +234 903 411 5677</footer>
   <script src="app.js"></script>
 </body>
 </html>
