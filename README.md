@@ -1,2 +1,2 @@
 # NovaMart
-Demo e-commerce storefront for portfolio
+Demo e-commerce storefront. Not a live payments shop.
